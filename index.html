@@ -1,0 +1,44 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dog Rank Assessment</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 text-gray-900 font-sans">
+
+  <div class="max-w-xl mx-auto p-4">
+    <h1 class="text-2xl font-bold mb-4 text-center">🐶 Dog Rank Assessment</h1>
+
+    <form id="dogForm" class="space-y-4">
+      <div>
+        <label class="block font-medium">Nome del Proprietario</label>
+        <input type="text" name="nome_proprietario" class="w-full p-2 border rounded" required>
+      </div>
+
+      <div>
+        <label class="block font-medium">Nome del Cane</label>
+        <input type="text" name="nome_cane" class="w-full p-2 border rounded" required>
+      </div>
+
+      <div>
+        <label class="block font-medium">Razza del Cane</label>
+        <input type="text" name="razza_cane" class="w-full p-2 border rounded" required>
+      </div>
+
+      <div>
+        <label class="block font-medium">Età del Cane (in anni)</label>
+        <input type="number" name="eta_cane" class="w-full p-2 border rounded" required>
+      </div>
+
+      <button type="submit" class="w-full bg-blue-600 text-white p-2 rounded hover:bg-blue-700 transition">Continua</button>
+    </form>
+
+    <div id="questionario" class="mt-6 hidden"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

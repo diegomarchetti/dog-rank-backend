@@ -1,0 +1,134 @@
+{
+  "informazioni_iniziali": {
+    "nome_proprietario": "",
+    "nome_cane": "",
+    "razza_cane": "",
+    "eta_cane": ""
+  },
+  "questionario": {
+    "proprietario": [
+      {
+        "id": "P1",
+        "domanda": "Se dici 'no', lo segui sempre e lo fai rispettare?",
+        "categoria": "Coerenza"
+      },
+      {
+        "id": "P2",
+        "domanda": "Se il cane insiste o guarda intensamente per ottenere qualcosa, cedi?",
+        "categoria": "Permissività"
+      },
+      {
+        "id": "P3",
+        "domanda": "Offri premi solo quando esegue ciò che chiedi, anche con pazienza?",
+        "categoria": "Leadership calma"
+      },
+      {
+        "id": "P4",
+        "domanda": "Applichi punizioni o correzioni fisiche (es. strattoni)?",
+        "categoria": "Metodi avversivi"
+      },
+      {
+        "id": "P5",
+        "domanda": "La routine (passeggiate, pasti, giochi) è abbastanza regolare e prevedibile?",
+        "categoria": "Predicibilità"
+      },
+      {
+        "id": "P6",
+        "domanda": "Riesci a mantenere la calma anche se il cane fa errori o è stressato?",
+        "categoria": "Stabilità emotiva"
+      },
+      {
+        "id": "P7",
+        "domanda": "Sei informato sui bisogni etologici e cognitivi del cane?",
+        "categoria": "Conoscenza"
+      },
+      {
+        "id": "P8",
+        "domanda": "Pratichi regolarmente esercizi o giochi strutturati con il cane?",
+        "categoria": "Attività condivise"
+      },
+      {
+        "id": "P9",
+        "domanda": "Senti che il cane possa dipendere da te emotivamente?",
+        "categoria": "Attaccamento"
+      },
+      {
+        "id": "P10",
+        "domanda": "Se ti senti in colpa, spesso lasci passare comportamenti “vietati”?",
+        "categoria": "Empatia vs indulgenza"
+      },
+      {
+        "id": "P11",
+        "domanda": "Chiedi aiuto a professionisti quando ci sono problemi comportamentali?",
+        "categoria": "Responsabilità"
+      },
+      {
+        "id": "P12",
+        "domanda": "Dormi o mangi insieme al cane in modo regolare (es. sul letto, divano)?",
+        "categoria": "Gestione spazi"
+      }
+    ],
+    "cane": [
+      {
+        "id": "C1",
+        "domanda": "Il cane mostra paura (scappa, trema) di fronte a rumori forti o ambienti nuovi?",
+        "categoria": "Ansia/Fobia"
+      },
+      {
+        "id": "C2",
+        "domanda": "Quando non ci sei, tende a distruggere oggetti, abbaiare o agitarsi?",
+        "categoria": "Ansia da separazione"
+      },
+      {
+        "id": "C3",
+        "domanda": "Reagisce con ringhi o scatti se avvicini la ciotola o i suoi giochi?",
+        "categoria": "Aggressività da risorse"
+      },
+      {
+        "id": "C4",
+        "domanda": "Mostra impazienza o agitazione prima dei pasti o delle passeggiate?",
+        "categoria": "Controllo risorse/Impulsività"
+      },
+      {
+        "id": "C5",
+        "domanda": "Ha bisogno di tempo per calmarsi dopo situazioni stressanti?",
+        "categoria": "Recupero emotivo"
+      },
+      {
+        "id": "C6",
+        "domanda": "Quando incontra estranei o altri cani, mostra curiosità o reazioni intense?",
+        "categoria": "Socialità"
+      },
+      {
+        "id": "C7",
+        "domanda": "È distruttivo o iperattivo quando è da solo o annoiato?",
+        "categoria": "Iperattività"
+      },
+      {
+        "id": "C8",
+        "domanda": "Prende spesso l’iniziativa durante le passeggiate?",
+        "categoria": "Impulsività"
+      },
+      {
+        "id": "C9",
+        "domanda": "Cerca attenzioni fisiche in modo insistente (es. salta, lecca, monta)?",
+        "categoria": "Richiesta attenzione"
+      },
+      {
+        "id": "C10",
+        "domanda": "In situazioni di stress si sottomette (pancia in aria, evita lo sguardo)?",
+        "categoria": "Sottomissione"
+      },
+      {
+        "id": "C11",
+        "domanda": "Dorme su superfici sopraelevate (letto, divano) anche senza invito?",
+        "categoria": "Controllo spazi"
+      },
+      {
+        "id": "C12",
+        "domanda": "Risponde bene a premi anche in ambienti distratti?",
+        "categoria": "Motivazione"
+      }
+    ]
+  }
+}
