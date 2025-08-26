@@ -64,5 +64,6 @@ Scrivi un testo in tono amichevole e utile, come se fosse un consiglio diretto a
     return prompt
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run(host='0.0.0.0', port=10000)
+
 
