@@ -100,19 +100,44 @@ document.addEventListener('DOMContentLoaded', () => {
     return descrizioni[val] || val;
   }
 
-  function mostraPulsanteGenera(dati) {
-    questionarioDiv.innerHTML = `
-      <div class="p-4 bg-green-100 border border-green-400 rounded mb-4">
-        <p class="text-green-900 font-semibold">Hai completato tutte le domande!</p>
-      </div>
-      <button id="generaAi" class="w-full bg-indigo-600 text-white p-2 rounded hover:bg-indigo-700 transition">
-        🔍 Genera Risposta AI
-      </button>
-    `;
+function mostraPulsanteGenera(dati) {
+  questionarioDiv.innerHTML = `
+    <div class="p-4 bg-green-100 border border-green-400 rounded mb-4">
+      <p class="text-green-900 font-semibold">Hai completato tutte le domande!</p>
+    </div>
+    <button id="generaAi" class="w-full bg-indigo-600 text-white p-2 rounded hover:bg-indigo-700 transition mb-4">
+      🔍 Genera Risposta AI
+    </button>
+    <div id="aiOutput" class="mt-4 text-sm text-gray-700 whitespace-pre-line"></div>
+  `;
 
-    document.getElementById('generaAi').addEventListener('click', () => {
-      console.log('Invio al backend:', dati);
-      // Qui faremo la chiamata POST al backend Flask
-    });
-  }
+  document.getElementById('generaAi').addEventListener('click', async () => {
+    const output = document.getElementById('aiOutput');
+    output.innerHTML = "⏳ Generazione in corso...";
+
+    try {
+      const res = await fetch("https://dog-rank-backend.onrender.com/genera", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json"
+        },
+        body: JSON.stringify(dati)
+      });
+
+      const result = await res.json();
+
+      if (result.risposta_ai) {
+        output.innerHTML = result.risposta_ai;
+      } else {
+        output.innerHTML = "⚠️ Errore nella risposta del server.";
+        console.error(result);
+      }
+    } catch (err) {
+      output.innerHTML = "❌ Errore nella richiesta al backend.";
+      console.error(err);
+    }
+  });
+}
+
 });
+
