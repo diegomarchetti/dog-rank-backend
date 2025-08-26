@@ -7,7 +7,7 @@ import requests
 load_dotenv()
 
 app = Flask(__name__)
-CORS(app)
+CORS(app, origins=["https://diegomarchetti.github.io"])
 
 API_KEY = os.getenv("OPENROUTER_API_KEY")
 
@@ -65,3 +65,4 @@ Scrivi un testo in tono amichevole e utile, come se fosse un consiglio diretto a
 
 if __name__ == "__main__":
     app.run(debug=True)
+
